@@ -7,9 +7,8 @@ CDC.o: CDC.asm
 CDC: CDC.o	
 	ld CDC.o -o CDC
 	disassembler CDC
-
-clean:
-	rm *.o CDC
 	
 install: CDC
 	cp CDC /usr/bin
+clean:
+	rm *.o CDC
