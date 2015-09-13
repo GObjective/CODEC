@@ -6,15 +6,15 @@ if True:
     argc = len(argv)  
   
 if True:
-  if(argc != 1 and argc < 3):
-    if(argv[0] == "-C"):
-      if(argv[1] != None):
-        system("CDC -C " + argv[1])
+  if(argc != 1 and argc < 2):
+    if(argv[1] == "-C"):
+      if(argv[2] != None):
+        system("CDC -C " + argv[2])
       else:
         print("\033[91m" + "Error: [No input file]" + "\033[0m")
-    elif(argv[0] == "-D"):
-      if(argv[1] != None):
-        system("CDC -D " + argv[1])
+    elif(argv[1] == "-D"):
+      if(argv[2] != None):
+        system("CDC -D " + argv[2])
       else:
         print("\033[91m" + "Error: [No output file]" + "\033[0m") 
     else:
