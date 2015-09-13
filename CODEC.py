@@ -6,7 +6,7 @@ if True:
     argc = len(argv)  
   
 if True:
-  if(argc != 0 and argc < 3):
+  if(argc != 1 and argc < 3):
     if(argv[0] == "-C"):
       if(argv[1] != None):
         system("CDC -C " + argv[1])
