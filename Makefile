@@ -2,11 +2,10 @@ assembler = nasm
 disassembler = objdump -d
 
 CDC.o: CDC.asm
-  assembler -f elf CDC.asm -o CDC.o
-
+  as -o CDC.o CDC.asm 
 CDC: CDC.o	
 	ld CDC.o -o CDC
-	disassembler CDC
+	objdump -d CDC
 	
 install: CDC
 	cp CDC /usr/bin
