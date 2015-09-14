@@ -9,14 +9,14 @@
 		%endif	
 	
 		%macro END	0
-			XOR		EAX, EAX
+			XOR	EAX, EAX
 			MOV 	EAX, 1
-			XOR		EBX, EBX
-			INT		0x80		
+			XOR	EBX, EBX
+			INT	0x80		
 		%endmacro
 		
 		%ifdef x64
-			RSIZE	equ	8
+			RSIZE	equ 8
 		%else
 			RSIZE	equ 4
 		%endif
@@ -66,9 +66,9 @@
 			push	r7
 		%endmacro
 		%macro PoFS 0
-			pop		r3
-			pop		r5
-			pop		r6
+			pop	r3
+			pop	r5
+			pop	r6
 			pop 	r7
 		%endmacro
 %endif
